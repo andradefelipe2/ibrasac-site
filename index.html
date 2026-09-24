@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- 🔧 TROCAR: título e descrição -->
+<title>IBRASAC — Instituto Brasileiro de Alianças Socioambiental Cultural | Limão, SP</title>
+<meta name="description" content="IBRASAC — 12 anos de assistência, cultura e educação no Bairro do Limão, São Paulo. ONG sem fins lucrativos. Saiba como ser voluntário ou doar.">
+<meta name="keywords" content="IBRASAC, ONG São Paulo, Bairro do Limão, voluntariado, assistência social, cultura, educação, terceiro setor">
+<meta name="author" content="IBRASAC">
+<meta name="theme-color" content="#123F34">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+<!-- 🔧 TROCAR: URL e imagem -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="IBRASAC — 12 anos transformando vidas no Limão">
+<meta property="og:description" content="Assistência, cultura e educação para a comunidade. Conheça nosso trabalho e seja voluntário.">
+<meta property="og:url" content="https://seusite.com">
+<meta property="og:image" content="https://seusite.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="IBRASAC">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IBRASAC — Transformando vidas no Limão">
+<meta name="twitter:description" content="Assistência, cultura e educação para a comunidade.">
+<meta name="twitter:image" content="https://seusite.com/og-image.jpg">
+
+<!-- 🔧 TROCAR: favicon -->
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://seusite.com">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Schema.org (Rich Results no Google) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "IBRASAC — Instituto Brasileiro de Alianças Socioambiental Cultural",
+  "alternateName": "IBRASAC",
+  "url": "https://seusite.com",
+  "logo": "https://seusite.com/favicon.png",
+  "description": "Associação não governamental sem fins lucrativos que atua há 12 anos com assistência, cultura e educação no Bairro do Limão, São Paulo.",
+  "foundingDate": "2009",
+  "telephone": "+551139130013",
+  "email": "projetoibrasac@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Francisco Augusto Lopes, 234",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "02557-120",
+    "addressCountry": "BR"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "São Paulo"
+  },
+  "sameAs": [
+    "https://instagram.com/ibrasac_ong"
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --verde: #1F6E5C;
+    --verde-escuro: #123F34;
+    --dourado: #D9A441;
+    --areia: #FAF6EE;
+    --texto: #1C2B27;
+    --sombra: 0 12px 26px rgba(31,110,92,0.18);
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body{
+    font-family:'Inter', sans-serif;
+    color: var(--texto);
+    background: var(--areia);
+    line-height:1.55;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  h1,h2,.brand{ font-family:'Fraunces', serif; }
+  .wrap{ max-width:640px; margin:0 auto; padding:0 24px; }
+
+  /* ---------- HEADER ---------- */
+  header{
+    background: linear-gradient(165deg, var(--verde-escuro), var(--verde));
+    color:#fff;
+    padding: 26px 0 54px;
+    position:relative; overflow:hidden;
+  }
+  header::after{
+    content:"";
+    position:absolute; inset:auto -40px -60px auto;
+    width:220px; height:220px; border-radius:50%;
+    background: radial-gradient(circle, rgba(217,164,65,0.28), transparent 70%);
+    pointer-events:none;
+  }
+  .brand{ display:flex; align-items:center; gap:10px; font-size:19px; font-weight:700; }
+  .brand .mark{
+    width:34px; height:34px; border-radius:50%;
+    background: var(--dourado); color:var(--verde-escuro);
+    display:flex; align-items:center; justify-content:center;
+    font-weight:800; font-size:15px; font-family:'Inter',sans-serif;
+  }
+  .eyebrow{
+    display:inline-block; margin-top:22px;
+    background: rgba(255,255,255,0.14); border:1px solid rgba(255,255,255,0.3);
+    padding:5px 13px; border-radius:999px; font-size:12.5px;
+  }
+  header h1{
+    font-size: clamp(28px, 8vw, 38px);
+    font-weight:700; line-height:1.2;
+    margin-top:14px; max-width:14ch;
+  }
+  header p{ margin-top:14px; font-size:16px; color:#DCEDE6; max-width:38ch; }
+
+  .stats{ display:flex; gap:14px; margin-top:26px; }
+  .stat{
+    background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.25);
+    border-radius:14px; padding:14px 16px; flex:1;
+  }
+  .stat .n{ font-family:'Fraunces',serif; font-size:24px; font-weight:700; }
+  .stat .l{ font-size:12px; color:#CFE4DC; margin-top:2px; }
+
+  /* ---------- MAIN ---------- */
+  main{ padding:44px 0 10px; }
+  section{ margin-bottom:44px; }
+  .kicker{ color:var(--verde); font-weight:600; font-size:13px; letter-spacing:.3px; }
+  h2{ font-size:23px; margin-top:6px; margin-bottom:18px; color:var(--verde-escuro); }
+
+  /* Animação suave de entrada */
+  @media (prefers-reduced-motion: no-preference){
+    section{ animation: fadeUp .6s ease both; }
+    section:nth-child(2){ animation-delay:.08s; }
+    section:nth-child(3){ animation-delay:.16s; }
+    @keyframes fadeUp{
+      from{ opacity:0; transform:translateY(14px); }
+      to{ opacity:1; transform:translateY(0); }
+    }
+  }
+
+  /* ---------- CARDS ---------- */
+  .cards{ display:grid; gap:12px; }
+  .card{
+    background:#fff; border:1px solid #E7E0D0; border-radius:14px;
+    padding:16px 18px;
+  }
+  .card .dot{ width:10px; height:10px; border-radius:50%; display:inline-block; margin-right:8px; }
+  .card b{ font-size:15.5px; color:var(--verde-escuro); }
+  .card p{ font-size:14px; color:#4A5A54; margin-top:4px; }
+
+  /* ---------- ABOUT ---------- */
+  .about-box{
+    background:#fff; border-radius:16px; padding:20px 22px;
+    border:1px solid #E7E0D0;
+    font-size:15px; color:#33423C;
+  }
+  .about-box strong{ color:var(--verde-escuro); }
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{ display:grid; gap:12px; }
+  .contact-row{
+    display:flex; gap:12px; align-items:flex-start;
+    background:#fff; border:1px solid #E7E0D0; border-radius:14px; padding:14px 16px;
+    text-decoration:none; color:inherit;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .contact-row:hover,
+  .contact-row:focus-visible{ border-color:var(--verde); transform: translateY(-1px); outline:none; }
+  .contact-row .ico{ flex:none; width:22px; text-align:center; color:var(--verde); font-size:17px; }
+  .contact-row .txt b{ display:block; color:var(--verde-escuro); font-size:14.5px; }
+  .contact-row .txt span{ font-size:14px; color:#4A5A54; }
+
+  /* ---------- FORM ---------- */
+  .form-card{
+    background:#fff; border:1px solid #E7E0D0; border-radius:16px;
+    padding:20px 22px; margin-top:14px;
+  }
+  .form-card label{
+    display:block; font-size:13.5px; font-weight:600;
+    color:var(--verde-escuro); margin-top:12px; margin-bottom:4px;
+  }
+  .form-card input,
+  .form-card select,
+  .form-card textarea{
+    width:100%; padding:11px 14px;
+    border:1px solid #D8CFBC; border-radius:10px;
+    font-family:inherit; font-size:14.5px; color:var(--texto);
+    background:#FDFCF8; transition: border-color .15s;
+  }
+  .form-card input:focus,
+  .form-card select:focus,
+  .form-card textarea:focus{
+    outline:none; border-color:var(--verde);
+    box-shadow:0 0 0 3px rgba(31,110,92,0.12);
+  }
+  .form-card textarea{ resize:vertical; min-height:80px; }
+  .form-card button{
+    width:100%; margin-top:16px; cursor:pointer;
+    background: var(--verde); color:#fff;
+    font-weight:700; font-size:16px; font-family:inherit;
+    padding:14px 20px; border:none; border-radius:12px;
+    transition: filter .15s;
+  }
+  .form-card button:hover{ filter:brightness(1.08); }
+  .form-card button:disabled{ opacity:.6; cursor:wait; }
+  .form-msg{ font-size:14px; margin-top:12px; text-align:center; display:none; }
+  .form-msg.ok{ color:var(--verde); display:block; }
+  .form-msg.err{ color:#C24B3F; display:block; }
+
+  /* ---------- CTAs ---------- */
+  .cta{
+    display:block; text-align:center;
+    background: var(--verde); color:#fff;
+    font-weight:700; font-size:16.5px;
+    padding:15px 20px; border-radius:14px;
+    text-decoration:none; margin-top:16px;
+    box-shadow: var(--sombra);
+    transition: filter .15s;
+  }
+  .cta:hover{ filter:brightness(1.08); }
+  .cta.secondary{
+    background:#fff; color:var(--verde);
+    border:2px solid var(--verde); box-shadow:none; margin-top:10px;
+  }
+  .cta.dourado{
+    background: var(--dourado); color:#3B2A00;
+    box-shadow: 0 12px 26px rgba(217,164,65,0.35);
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background: var(--verde-escuro); color:#BFDAD1;
+    padding:26px 0 calc(26px + env(safe-area-inset-bottom,0px));
+    text-align:center; font-size:12.5px;
+  }
+  footer a{ color:#fff; }
+  footer .social{
+    display:flex; justify-content:center; gap:18px; margin-top:14px;
+  }
+  footer .social a{ font-weight:600; text-decoration:none; }
+  footer .social a:hover{ text-decoration:underline; }
+
+  /* ---------- WHATSAPP FLUTUANTE ---------- */
+  .whatsapp-float{
+    position:fixed; bottom:calc(20px + env(safe-area-inset-bottom,0px)); right:20px;
+    width:58px; height:58px; border-radius:50%;
+    background:#25D366;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 8px 22px rgba(37,211,102,0.45);
+    z-index:999; transition: transform .2s ease;
+  }
+  .whatsapp-float:hover{ transform: scale(1.08); }
+  .whatsapp-float svg{ width:30px; height:30px; fill:#fff; }
+
+  /* Botão "voltar ao topo" */
+  .top-btn{
+    position:fixed; bottom:calc(88px + env(safe-area-inset-bottom,0px)); right:20px;
+    width:44px; height:44px; border-radius:50%;
+    background:#fff; color:var(--verde);
+    border:1px solid #E7E0D0;
+    display:flex; align-items:center; justify-content:center;
+    text-decoration:none; font-size:18px; font-weight:700;
+    box-shadow:0 6px 16px rgba(0,0,0,0.1);
+    opacity:0; pointer-events:none; transition: opacity .3s;
+  }
+  .top-btn.show{ opacity:1; pointer-events:auto; }
+
+  /* Skip link (acessibilidade) */
+  .skip{
+    position:absolute; left:-9999px; top:0;
+    background:var(--verde-escuro); color:#fff;
+    padding:10px 16px; z-index:1000; border-radius:0 0 8px 0;
+  }
+  .skip:focus{ left:0; }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Pular para o conteúdo principal</a>
+
+<header>
+  <div class="wrap">
+    <div class="brand"><span class="mark" aria-hidden="true">IB</span> IBRASAC</div>
+    <div class="eyebrow">Bairro do Limão · São Paulo</div>
+    <h1>12 anos transformando vidas no Limão</h1>
+    <p>Assistência, cultura e educação para a comunidade — um trabalho construído com o bairro, para o bairro.</p>
+    <div class="stats" aria-label="Números do instituto">
+      <div class="stat"><div class="n">12</div><div class="l">anos de atuação</div></div>
+      <div class="stat"><div class="n">3</div><div class="l">frentes de atuação</div></div>
+      <div class="stat"><div class="n">100%</div><div class="l">sem fins lucrativos</div></div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+
+    <section>
+      <div class="kicker">Onde atuamos</div>
+      <h2>Nossas frentes de trabalho</h2>
+      <div class="cards">
+        <div class="card"><span class="dot" style="background:#1F6E5C"></span><b>Treinamento profissional</b><p>Capacitação para abrir portas no mercado de trabalho.</p></div>
+        <div class="card"><span class="dot" style="background:#C24B3F"></span><b>Arte, Cultura e Esporte</b><p>Atividades que fortalecem identidade, convívio e talento local.</p></div>
+        <div class="card"><span class="dot" style="background:#D9A441"></span><b>Saúde</b><p>Ações e parcerias voltadas ao bem-estar da comunidade.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">Quem somos</div>
+      <h2>O Instituto</h2>
+      <div class="about-box">
+        O <strong>Instituto Brasileiro de Alianças Socioambiental Cultural — IBRASAC</strong> é uma associação não governamental, sem fins lucrativos, nascida em 2008 como rede de articulação a partir do Fórum da Agenda 21 da Zona Norte de SP, e formalizada juridicamente em 2009.
+        <br><br>
+        Atuamos como ponte entre sociedade civil, entidades sociais, setor privado e poder público — apoiando projetos em diferentes bairros de São Paulo através de conscientização socioambiental, capacitação profissional, educação ambiental, eventos e oficinas culturais.
+      </div>
+      <div class="about-box" style="margin-top:12px;">
+        <b style="color:var(--verde-escuro);">Público-alvo</b>
+        <p style="margin-top:4px;">Crianças, adolescentes e jovens de bairros periféricos de São Paulo, com atividades adaptadas para cada faixa etária.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">Fale com a gente</div>
+      <h2>Contato e voluntariado</h2>
+      <div class="contact-grid">
+
+        <a class="contact-row"
+           href="https://www.google.com/maps/search/?api=1&query=R.+Francisco+Augusto+Lopes,+234+-+Vila+Prado,+São+Paulo+-+SP,+02557-120"
+           target="_blank" rel="noopener" aria-label="Ver localização no Google Maps">
+          <div class="ico" aria-hidden="true">📍</div>
+          <div class="txt">
+            <b>Localização</b>
+            <span>R. Francisco Augusto Lopes, 234 - Vila Prado, São Paulo - SP, 02557-120</span>
+          </div>
+        </a>
+
+        <a class="contact-row" href="tel:+551139130013" aria-label="Ligar para +55 11 3913-0013">
+          <div class="ico" aria-hidden="true">📞</div>
+          <div class="txt">
+            <b>Telefone</b>
+            <span>+55 11 3913-0013</span>
+          </div>
+        </a>
+
+        <a class="contact-row" href="mailto:projetoibrasac@gmail.com?subject=Contato%20via%20site%20IBRASAC" aria-label="Enviar e-mail para projetoibrasac@gmail.com">
+          <div class="ico" aria-hidden="true">✉️</div>
+          <div class="txt">
+            <b>E-mail</b>
+            <span>projetoibrasac@gmail.com</span>
+          </div>
+        </a>
+
+        <a class="contact-row"
+           href="https://api.whatsapp.com/send?phone=551139130013&text=Olá!%20Tenho%20interesse%20em%20ser%20voluntário(a)%20no%20IBRASAC."
+           target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp sobre voluntariado">
+          <div class="ico" aria-hidden="true">🤝</div>
+          <div class="txt">
+            <b>Voluntariado</b>
+            <span>Quero ajudar o IBRASAC — fale conosco pelo WhatsApp</span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- FORMULÁRIO DE VOLUNTARIADO -->
+      <div class="form-card">
+        <h3 style="font-family:'Fraunces',serif; color:var(--verde-escuro); font-size:18px; margin-bottom:6px;">
+          Quero ser voluntário(a)
+        </h3>
+        <p style="font-size:13.5px; color:#5A6B64;">Preencha e entraremos em contato.</p>
+
+        <!-- 🔧 TROCAR: access_key do Web3Forms -->
+        <form id="form-voluntario" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="SUA_CHAVE_WEB3FORMS">
+          <input type="hidden" name="subject" value="Novo voluntário pelo site IBRASAC">
+          <input type="hidden" name="from_name" value="Site IBRASAC">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+          <label for="v-nome">Nome completo *</label>
+          <input id="v-nome" type="text" name="nome" required autocomplete="name" placeholder="Como podemos te chamar?">
+
+          <label for="v-email">E-mail *</label>
+          <input id="v-email" type="email" name="email" required autocomplete="email" placeholder="seu@email.com">
+
+          <label for="v-tel">WhatsApp *</label>
+          <input id="v-tel" type="tel" name="telefone" required autocomplete="tel" placeholder="(11) 9 9999-9999">
+
+          <label for="v-area">Área de interesse *</label>
+          <select id="v-area" name="area" required>
+            <option value="">Selecione...</option>
+            <option>Treinamento profissional</option>
+            <option>Arte, Cultura e Esporte</option>
+            <option>Saúde</option>
+            <option>Administrativo / Comunicação</option>
+            <option>Outro</option>
+          </select>
+
+          <label for="v-msg">Conte um pouco sobre você</label>
+          <textarea id="v-msg" name="mensagem" placeholder="Disponibilidade, experiência, motivação..."></textarea>
+
+          <button type="submit">Enviar inscrição</button>
+          <div class="form-msg" id="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <a class="cta" href="https://api.whatsapp.com/send?phone=551139130013" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <a class="cta secondary" href="https://instagram.com/ibrasac_ong" target="_blank" rel="noopener">Ver no Instagram @ibrasac_ong</a>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    IBRASAC — Instituto Brasileiro de Alianças Socioambiental Cultural<br>
+    Bairro do Limão, São Paulo · <a href="mailto:projetoibrasac@gmail.com">projetoibrasac@gmail.com</a>
+    <div class="social">
+      <a href="https://instagram.com/ibrasac_ong" target="_blank" rel="noopener" aria-label="Instagram do IBRASAC">Instagram</a>
+      <a href="https://api.whatsapp.com/send?phone=551139130013" target="_blank" rel="noopener" aria-label="WhatsApp do IBRASAC">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Botão flutuante de WhatsApp -->
+<a class="whatsapp-float"
+   href="https://api.whatsapp.com/send?phone=551139130013&text=Olá!%20Vim%20pelo%20site%20do%20IBRASAC."
+   target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<!-- Botão "voltar ao topo" -->
+<a href="#" class="top-btn" id="topBtn" aria-label="Voltar ao topo">↑</a>
+
+<script>
+  // Envio do formulário via fetch (evita sair da página)
+  const form = document.getElementById('form-voluntario');
+  const msg = document.getElementById('form-msg');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('button');
+    const original = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+    msg.className = 'form-msg';
+    msg.textContent = '';
+
+    try {
+      const data = new FormData(form);
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      const json = await res.json();
+      if (json.success) {
+        msg.className = 'form-msg ok';
+        msg.textContent = '✅ Recebemos sua inscrição! Entraremos em contato em breve.';
+        form.reset();
+      } else {
+        throw new Error(json.message || 'Erro');
+      }
+    } catch (err) {
+      msg.className = 'form-msg err';
+      msg.textContent = '❌ Não foi possível enviar. Tente pelo WhatsApp.';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = original;
+    }
+  });
+
+  // Botão "voltar ao topo" aparece após rolar
+  const topBtn = document.getElementById('topBtn');
+  window.addEventListener('scroll', () => {
+    topBtn.classList.toggle('show', window.scrollY > 400);
+  }, { passive: true });
+</script>
+
+</body>
+</html>
